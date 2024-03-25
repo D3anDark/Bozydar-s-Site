@@ -1,0 +1,151 @@
+:root{
+    --font-family: 'satoshi', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+
+    background-image: linear-gradient(to right, #000000, #2c2828);
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+
+    font-family: system-ui, -apple-system, var(--font-family), Roboto, sans-serif;
+    font-style: normal;
+    color: #FFF;
+    opacity: 80%;
+
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+}
+.second-text{
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFF;
+    text-align: center;
+}
+
+button{
+
+    cursor: pointer;
+
+    border: 2px solid #FFF;
+    background: #2f2f2f;
+    color: #FFF;
+
+    font-family: var(--font-family);
+    font-size: 1rem;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+button:hover{
+    background: #FFF;
+    color: #000;
+    transform: scale(1.2);
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+button:focus{
+    outline: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.AboutMeTitle{
+    font-family: var(--font-family);
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+
+    width: 100%;
+    gap: 25px;
+}
+
+.AboutMeText{
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFF;
+
+    width: 40%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-family);
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 768px){
+    .AboutMeText{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .second-text{
+        font-size: 1rem;
+    }
+    .AboutMeTitle{
+        font-size: 2rem;
+    }
+}
