@@ -59,11 +59,16 @@ h1 {
     text-align: center;
 }
 
-button{
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
+button{
     cursor: pointer;
 
-    border: 2px solid #FFF;
     background: #2f2f2f;
     color: #FFF;
 
@@ -72,12 +77,13 @@ button{
 
     padding: 10px 20px;
 
-    border-radius: 5px;
+    border-radius: 8px;
 
     transition: all 0.3s ease;
 }
+
 button:hover{
-    background: #FFF;
+    background-color: #fff;
     color: #000;
     transform: scale(1.2);
 }
@@ -94,9 +100,11 @@ button:focus{
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
     align-items: center;
     gap: 20px;
+
+    width: 100%;
+    height: 800px;
 }
 
 .AboutMeTitle{
@@ -130,7 +138,10 @@ footer{
     gap: 20px;
 
     width: 100%;
-    height: 300px;
+}
+footer a{
+    color: #FFF;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px){
@@ -140,6 +151,10 @@ footer{
 
     h1{
         font-size: 2rem;
+    }
+
+    .buttons{
+        flex-direction: column;
     }
 
     .second-text{
